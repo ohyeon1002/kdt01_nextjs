@@ -5,13 +5,13 @@ import TailButton from "@/components/UI/TailButton";
 import { useState } from "react";
 
 export default function Lotto() {
-  let set: Set<number> = new Set();
+  const set: Set<number> = new Set();
   const [ifShow, setIfShow] = useState<boolean>(false);
 
   while (set.size < 7) {
     set.add(Math.floor(Math.random() * 45 + 1));
   }
-  let tags: React.ReactNode[] =
+  const tags: React.ReactNode[] =
     ifShow == true
       ? Array.from(set)
           .sort((a, b) => a - b)
@@ -19,7 +19,7 @@ export default function Lotto() {
             <TailBall key={num} value={num} colorTag={Math.floor(num / 10)} />
           ))
       : [""];
-  let bonus = tags.splice(Math.floor(Math.random() * 6), 1);
+  const bonus = tags.splice(Math.floor(Math.random() * 6), 1);
 
   return (
     <>

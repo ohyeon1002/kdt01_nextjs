@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 export default function MyClockTime() {
   const [timenow, setTimenow] = useState<Date>(new Date());
   useEffect(() => {
-    let tm = setInterval(() => {
+    const tm = setInterval(() => {
       setTimenow(new Date());
     }, 1000);
     return () => {
