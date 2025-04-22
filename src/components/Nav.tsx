@@ -37,6 +37,9 @@ export default function Nav() {
         <li className="w-full hover:border hover:cursor-pointer mx-5 text-center">
           <Link href="/todo">Todos</Link>
         </li>
+        <li className="w-full hover:border hover:cursor-pointer mx-5 text-center">
+          <Link href="/productlist2">제품목록</Link>
+        </li>
         {/* {logState && (
           <li className="w-full hover:border hover:cursor-pointer mx-5 text-center">
             <Link href="/subway">Subway Air Condition</Link>
