@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Nav from "@/components/Nav";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,11 +24,51 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ko">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div
+          className="w-full h-full xl:w-8/10
+                    flex flex-col
+                    mx-auto"
+        >
+          <header
+            className="w-full h-20
+                        flex justify-between items-center
+                        px-15
+                        bg-green-500 text-white"
+          >
+            <Nav />
+          </header>
+          <main
+            className="w-full
+                      flex flex-col flex-grow
+                      justify-center items-center
+                      overflow-y-auto py-10"
+          >
+            {children}
+            {/* <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/subway" element={<Subway />} />
+            <Route path="/todos" element={<TodoList />} />
+            <Route path="/test" element={<Tstest />} />
+            <Route path="/now" element={<MyClock />} />
+            <Route path="/lotto" element={<Lotto />} />
+            <Route path="/food" element={<FoodMain />} />
+          </Routes> */}
+          </main>
+          <footer
+            className="w-full h-20
+                        flex justify-center items-center
+                        px-15
+                        bg-green-700 text-white"
+          >
+            <span className="text-2xl font-light text-green-300">
+              K-Digital Training Course 25-1{" "}
+            </span>
+          </footer>
+        </div>
       </body>
     </html>
   );
