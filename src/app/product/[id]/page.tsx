@@ -9,6 +9,7 @@ export default async function ProductDetail({
   const item: Product = products.filter(
     (element: Product) => element.id == id
   )[0];
+  console.log(id)
   return (
     <>
       <Link href="/productlist2">[이전으로]</Link>

@@ -1,3 +1,4 @@
+'use client'
 import { useRef, MouseEvent } from "react";
 interface LoginProps {
   func: (logState: boolean) => void;

@@ -5,7 +5,7 @@ import axios from "axios";
 import TodoForm from "./TodoForm";
 import TodoItem from "./TodoItem";
 
-const baseUrl: string = "http://localhost:3005/todos";
+const baseUrl: string = "http://localhost:3000/api/todos";
 export interface datajson {
   id: string;
   text: string;
