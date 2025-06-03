@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Project Title
 
-## Getting Started
+A brief description of the project.
 
-First, run the development server:
+## Project Structure
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+A brief overview of the key directories in this project:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- `/prisma`: Contains database schema definitions and migration files managed by Prisma.
+- `/public`: Stores static assets like images, fonts, and other files that are publicly accessible.
+- `/src`: Holds the source code of the application.
+  - `/src/app`: Contains the core application code, including Next.js pages, API routes, and components.
+  - `/src/components`: Stores reusable UI components used throughout the application.
+  - `/src/lib`: Includes utility functions and library code, such as Prisma client setup.
+  - `/src/atoms`: Contains Recoil atoms for state management.
+  - `/src/generated`: Contains generated code, such as the Prisma client.
+  - `/src/types`: Holds TypeScript type definitions.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project includes the following features:
 
-## Learn More
+- **Clock:** Displays the current time.
+- **Food App:** Shows a list of food items, potentially with details.
+- **Lotto Number Generator:** Generates lottery numbers.
+- **Product Listing:** Displays a list of products, possibly with details and different views.
+- **Todo App:** A simple application to manage tasks.
+- **User Authentication:** Allows users to sign up and log in.
 
-To learn more about Next.js, take a look at the following resources:
+## Technologies Used
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is built with the following main technologies and frameworks:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Next.js:** A React framework for building server-side rendered and static web applications.
+- **React:** A JavaScript library for building user interfaces.
+- **TypeScript:** A typed superset of JavaScript that compiles to plain JavaScript.
+- **Prisma:** A next-generation ORM for Node.js and TypeScript, used for database access.
+- **Tailwind CSS:** A utility-first CSS framework for rapidly building custom designs.
+- **Recoil (Jotai):** While Recoil was mentioned in the plan, the `package.json` shows `jotai` which is a similar primitive and flexible state management library for React.
+- **ESLint:** A tool for identifying and reporting on patterns found in ECMAScript/JavaScript code.
